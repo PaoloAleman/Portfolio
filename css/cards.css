@@ -1,0 +1,30 @@
+#card{
+    position: relative;
+}
+
+.face{
+    backface-visibility: hidden;
+    transition: 2s;
+}
+
+.imgsLinks{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(71,71,69,1) 100%);
+}
+
+.front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.back{
+    transform: perspective(600px) rotateY(180deg);
+}
+
