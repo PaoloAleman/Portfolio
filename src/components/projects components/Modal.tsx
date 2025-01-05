@@ -11,7 +11,7 @@ type Item = {
 }
 type Project = {
     title : string;
-    image : string;
+    images : Technology[];
     description : string;
     backendTechnologies : Technology[];
     database : Technology;
@@ -94,11 +94,11 @@ export const Modal = (
                                 </ul>
                             </div>
                         }
-                        <div className="flex items-center justify-around">
+                        <div className="flex items-center justify-around flex-wrap md:gap-0 gap-6">
                             {project.backendTechnologies.length > 0 &&
-                                <div className="flex items-center flex-col gap-6">
+                                <div className="flex items-center flex-col md:gap-6 gap-2">
                                     <h4 className="text-center font-semibold text-lg">Backend</h4>
-                                    <div className="flex items-center gap-12">
+                                    <div className="flex items-center md:gap-12 gap-2">
                                         {project.backendTechnologies.map((backendTechnology, index) => (
                                             <ToolTip image={backendTechnology.source} altImage={backendTechnology.alt}
                                                      dataTip={backendTechnology.dataTip} key={index}/>
@@ -107,38 +107,41 @@ export const Modal = (
                                 </div>
                             }
                             {project.database &&
-                                <div className="flex items-center flex-col gap-6">
+                                <div className="flex items-center flex-col md:gap-6 gap-2">
                                     <h4 className="text-center font-semibold text-lg">Database</h4>
-                                    <div className="flex items-center gap-12">
+                                    <div className="flex items-center md:gap-12 gap-2">
                                         <ToolTip image={project.database.source} altImage={project.database.alt}
                                                  dataTip={project.database.dataTip}/>
                                     </div>
                                 </div>
                             }
-                            <div className="flex items-center flex-col gap-6">
+                            <div className="flex items-center flex-col md:gap-6 gap-2">
                                 <h4 className="font-semibold text-lg">Frontend</h4>
-                                <div className="flex items-center gap-12">
+                                <div className="flex items-center md:gap-12 gap-2">
                                     {project.frontendTechnologies.map((frontendTechnology, index) => (
                                         <ToolTip image={frontendTechnology.source} altImage={frontendTechnology.alt}
                                                  dataTip={frontendTechnology.dataTip} key={index}/>
                                     ))}
                                 </div>
                             </div>
-                            <div className="flex items-center flex-col gap-6">
+                            <div className="flex items-center flex-col md:gap-6 gap-2">
                                 <h4 className="font-semibold text-lg">Repository</h4>
-                                <div className="flex items-center gap-12">
+                                <div className="flex items-center md:gap-12 gap-2">
                                     <a href={project.repository}><ToolTip image={"/technologies/github.svg"}
-                                                                          altImage={"Repository"}
-                                                                          dataTip={"Repository"}/></a>
+                                                                          altImage={"GitHub"}
+                                                                          dataTip={"GitHub"}/></a>
                                 </div>
                             </div>
-                            <div className="flex items-center flex-col gap-6">
+                            <div className="flex items-center flex-col md:gap-6 gap-2">
                                 <h4 className="font-semibold text-lg">Deploy</h4>
-                                <div className="flex items-center gap-12">
+                                <div className="flex items-center md:gap-12 gap-2">
                                     <a href={project.deploy}><ToolTip image={"/technologies/railway.svg"}
                                                                       altImage={"Railway"} dataTip={"Railway"}/></a>
                                 </div>
                             </div>
+                        </div>
+                        <div className="modal-action">
+                            <button className="btn" onClick={() => setIsOpen(false)}>Close</button>
                         </div>
                     </div>
                 </div>

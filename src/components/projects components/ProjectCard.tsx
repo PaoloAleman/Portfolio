@@ -1,4 +1,5 @@
 import {Modal} from "./Modal";
+import {ImageCarousel} from "./ImageCarousel";
 
 type Technology = {
     source : string;
@@ -13,7 +14,7 @@ type Item = {
 
 type Project = {
     title : string;
-    image : string;
+    images : Technology[];
     description : string;
     backendTechnologies : Technology[];
     database : Technology;
@@ -28,12 +29,8 @@ type Project = {
 export const ProjectCard = (props : {project : Project})=>{
     const {project} = props;
     return (
-        <div className="card card-compact bg-base-100 w-96 shadow-xl">
-            <figure>
-                <img
-                    src={project.image}
-                    alt="Project Image"/>
-            </figure>
+        <div className="card card-compact bg-base-100 lg:w-3/12 shadow-xl">
+                <ImageCarousel images={project.images} />
             <div className="card-body">
                 <h2 className="card-title">{project.title}</h2>
                 <p>{project.description}</p>
