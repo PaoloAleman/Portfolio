@@ -1,4 +1,4 @@
-import {ToolTip} from "../projects components/ToolTip";
+import {ToolTip} from "../projects/ToolTip";
 
 type Technology = {
     source : string;

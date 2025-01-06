@@ -1,4 +1,4 @@
-import {WorkCard} from "./work components/WorkCard";
+import {WorkCard} from "./WorkCard";
 type Technology = {
     source : string;
     alt : string;
@@ -86,7 +86,7 @@ const works : Work[] = [
         ],
         funcionalidades: [
             {
-                title:'ABMs de las entidades.',
+                title:'CRUDs de las entidades.',
                 description:''
             },
             {

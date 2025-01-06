@@ -24,10 +24,12 @@ type Project = {
     items: Item[];
     itemsTitle: string;
     apis: Item[];
+    icon: Technology;
 }
 
 export const ProjectCard = (props : {project : Project})=>{
     const {project} = props;
+    console.log(project)
     return (
         <div className="card card-compact bg-base-100 lg:w-3/12 shadow-xl">
                 <ImageCarousel images={project.images} />

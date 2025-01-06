@@ -21,11 +21,13 @@ type Project = {
     items: Item[];
     itemsTitle: string;
     apis: Item[];
+    icon: Technology;
 }
 
 export const Modal = (
     props: {
-        project : Project}
+        project : Project
+    }
 ) => {
 
     const {project} = props;
@@ -61,6 +63,7 @@ export const Modal = (
                 See more
             </button>
             {isOpen && (
+
                 <div
                     className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[80] transition-opacity duration-200 ${
                         isVisible ? "opacity-100" : "opacity-0"
@@ -69,8 +72,11 @@ export const Modal = (
                     <div
                         className={`modal-box w-11/12 max-w-5xl transform transition-all duration-300 ease-out ${
                             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
-                        }`}
+                        } relative overflow-visible`}
                     >
+                        <button className="absolute -right-16 -top-16">
+                            <img src={project.icon.source} alt={project.icon.alt} className="h-32 w-32"/>
+                        </button>
                         <h2 className="text-3xl font-bold">{project.title}</h2>
                         <p className={'my-4'}>{project.description}</p>
                         {project.items.length > 0 &&

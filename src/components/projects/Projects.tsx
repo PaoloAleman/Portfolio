@@ -1,4 +1,4 @@
-import {ProjectCard} from "./projects components/ProjectCard";
+import {ProjectCard} from "./ProjectCard";
 
 type Technology = {
     source : string;
@@ -23,6 +23,7 @@ type Project = {
     items: Item[];
     itemsTitle: string;
     apis: Item[];
+    icon: Technology;
 }
 
 const dataProjects : Project[] = [
@@ -83,8 +84,12 @@ const dataProjects : Project[] = [
                 title: 'Gmail',
                 description: 'Para el registro de usuarios.',
             }
-        ]
-
+        ],
+        icon: {
+            source: '/projects/kirby.png',
+            alt: 'Kirby',
+            dataTip:'Kirby'
+        }
     },
     {
         title: 'River de Gallardo',
@@ -114,7 +119,12 @@ const dataProjects : Project[] = [
         deploy: 'https://riverdegallardo.netlify.app/',
         items: [ ],
         itemsTitle: '',
-        apis: []
+        apis: [],
+        icon: {
+            source: '/projects/river.svg',
+            alt: 'River',
+            dataTip:'Kirby'
+        }
     },
     {
         title: 'TuristeAR',
@@ -192,9 +202,13 @@ const dataProjects : Project[] = [
                 title: 'Imgur',
                 description: 'Guardar las imágenes.',
             },
-        ]
+        ],
+        icon: {
+            source: '/projects/turistearIcon.png',
+            alt: 'TuristeAR',
+            dataTip:'TuristeAR'
+        }
     },
-
 ]
 
 export const Projects = () => {
