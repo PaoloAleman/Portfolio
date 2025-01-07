@@ -1,28 +1,5 @@
 import { useState, useEffect } from "react";
-import { ToolTip } from "./ToolTip";
-type Technology = {
-    source : string;
-    alt : string;
-    dataTip : string;
-}
-type Item = {
-    title : string;
-    description : string;
-}
-type Project = {
-    title : string;
-    images : Technology[];
-    description : string;
-    backendTechnologies : Technology[];
-    database : Technology;
-    frontendTechnologies : Technology[];
-    repository: string;
-    deploy: string;
-    items: Item[];
-    itemsTitle: string;
-    apis: Item[];
-    icon: Technology;
-}
+import {Project} from "../../assets/types";
 
 export const Modal = (
     props: {
@@ -67,87 +44,32 @@ export const Modal = (
                 <div
                     className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[80] transition-opacity duration-200 ${
                         isVisible ? "opacity-100" : "opacity-0"
-                    }`}
+                    }`} onClick={()=> closeWithAnimation()}
                 >
                     <div
                         className={`modal-box w-11/12 max-w-5xl transform transition-all duration-300 ease-out ${
                             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                         } relative overflow-visible`}
+                        onClick={(e) => e.stopPropagation()}
                     >
-                        <button className="absolute -right-16 -top-16">
-                            <img src={project.icon.source} alt={project.icon.alt} className="h-32 w-32"/>
+                        <button className="absolute md:-right-16 md:-top-16 -right-4 -top-6">
+                            <img src={project.icon.source} alt={project.icon.alt} className="md:h-32 md:w-32 h-24 w-24"/>
                         </button>
+
                         <h2 className="text-3xl font-bold">{project.title}</h2>
                         <p className={'my-4'}>{project.description}</p>
-                        {project.items.length > 0 &&
-                            <div>
-                                <h3 className="text-xl font-semibold">{project.itemsTitle}</h3>
+                        {project.sections.map((section, index) => (
+                            <div key={index}>
+                                <h3 className="text-xl font-semibold">{section.title}</h3>
                                 <ul className="list-disc ml-5">
-                                    {project.items.map((item, index) => (
+                                    {section.items.map((item, index) => (
                                         <li key={index}><strong>{item.title}:</strong> {item.description}</li>
                                     ))}
                                 </ul>
                             </div>
-                        }
-
-                        {project.apis.length > 0 &&
-                            <div>
-                                <h3 className="text-xl font-semibold mt-4">APIs</h3>
-                                <ul className="list-disc ml-5 mb-5">
-                                    {project.apis.map((api, index) => (
-                                        <li key={index}><strong>{api.title}:</strong> {api.description}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        }
-                        <div className="flex items-center justify-around flex-wrap md:gap-0 gap-6">
-                            {project.backendTechnologies.length > 0 &&
-                                <div className="flex items-center flex-col md:gap-6 gap-2">
-                                    <h4 className="text-center font-semibold text-lg">Backend</h4>
-                                    <div className="flex items-center md:gap-12 gap-2">
-                                        {project.backendTechnologies.map((backendTechnology, index) => (
-                                            <ToolTip image={backendTechnology.source} altImage={backendTechnology.alt}
-                                                     dataTip={backendTechnology.dataTip} key={index}/>
-                                        ))}
-                                    </div>
-                                </div>
-                            }
-                            {project.database &&
-                                <div className="flex items-center flex-col md:gap-6 gap-2">
-                                    <h4 className="text-center font-semibold text-lg">Database</h4>
-                                    <div className="flex items-center md:gap-12 gap-2">
-                                        <ToolTip image={project.database.source} altImage={project.database.alt}
-                                                 dataTip={project.database.dataTip}/>
-                                    </div>
-                                </div>
-                            }
-                            <div className="flex items-center flex-col md:gap-6 gap-2">
-                                <h4 className="font-semibold text-lg">Frontend</h4>
-                                <div className="flex items-center md:gap-12 gap-2">
-                                    {project.frontendTechnologies.map((frontendTechnology, index) => (
-                                        <ToolTip image={frontendTechnology.source} altImage={frontendTechnology.alt}
-                                                 dataTip={frontendTechnology.dataTip} key={index}/>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="flex items-center flex-col md:gap-6 gap-2">
-                                <h4 className="font-semibold text-lg">Repository</h4>
-                                <div className="flex items-center md:gap-12 gap-2">
-                                    <a href={project.repository}><ToolTip image={"/technologies/github.svg"}
-                                                                          altImage={"GitHub"}
-                                                                          dataTip={"GitHub"}/></a>
-                                </div>
-                            </div>
-                            <div className="flex items-center flex-col md:gap-6 gap-2">
-                                <h4 className="font-semibold text-lg">Deploy</h4>
-                                <div className="flex items-center md:gap-12 gap-2">
-                                    <a href={project.deploy}><ToolTip image={"/technologies/railway.svg"}
-                                                                      altImage={"Railway"} dataTip={"Railway"}/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="modal-action">
-                            <button className="btn" onClick={() => setIsOpen(false)}>Close</button>
+                        ))}
+                        <div className="modal-action md:hidden block">
+                            <button className="btn" onClick={() => closeWithAnimation()}>Close</button>
                         </div>
                     </div>
                 </div>

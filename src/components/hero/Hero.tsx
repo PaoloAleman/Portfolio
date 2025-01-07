@@ -41,23 +41,23 @@ export const Hero = () => {
                 <motion.div
                     className="flex flex-col gap-6"
                     initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                 >
                     <div>
                         <motion.h1
                             className="text-6xl font-bold"
                             initial={{ opacity: 0, x: -50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, delay: 0.3 }}
                         >
                             Paolo Aleman
                         </motion.h1>
                         <motion.h2
                             className="text-5xl font-bold"
                             initial={{ opacity: 0, x: 50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1, delay: 0.4 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1, delay: 0.6 }}
                         >
                             Desarrollador Web
                         </motion.h2>
@@ -65,8 +65,8 @@ export const Hero = () => {
                     <motion.div
                         className="flex flex-row gap-12"
                         initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.8, delay: 0.6 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, delay: 0.9 }}
                     >
                         {links.map((icon, index) => (
                             <motion.div

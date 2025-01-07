@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-type Technology = {
-    source: string;
-    alt: string;
-    dataTip: string;
-};
+type Image = {
+    source : string;
+    alt : string;
+}
 
-export const ImageCarousel = (props: { images: Technology[] }) => {
+export const ImageCarousel = (props: { images: Image[] }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const { images } = props;
 

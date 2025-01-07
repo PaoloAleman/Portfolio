@@ -1,0 +1,98 @@
+[
+  {
+    "title": "K&O Mujer",
+    "images": [
+      {
+        "source": "/works/komujer.jpg",
+        "alt": "K&O Mujer"
+      }
+    ],
+    "description": "Un sistema de gestión de stock integral que registra todos los eventos dentro de la empresa. El ingreso de materiales y telas, la producción de cortes y costuras, y la venta del producto final son monitoreados por el sistema. La venta se da por varias vías, desde Mercado Libre hasta cotizaciones directas, lo que permite una gestión eficiente y actualizada de inventarios y transacciones.",
+    "technologies": [
+      {
+        "source": "/technologies/java.svg",
+        "alt": "Java"
+      },
+      {
+        "source": "/technologies/spring.svg",
+        "alt": "Spring Boot"
+      },
+      {
+        "source": "/technologies/mysql.svg",
+        "alt": "MySQL"
+      },
+      {
+        "source": "/technologies/thymeleaf.svg",
+        "alt": "Thymeleaf"
+      },
+      {
+        "source": "/technologies/javascript.svg",
+        "alt": "JavaScript"
+      }
+    ],
+    "repository": {
+      "source": "/technologies/github.svg",
+      "alt": "Repository",
+      "url": ""
+    },
+    "deploy": {
+      "source": "/technologies/railway.svg",
+      "alt": "Railway Deploy",
+      "url": ""
+    },
+    "sections": [
+      {
+        "title": "Datos",
+        "items": [
+          {
+            "title": "Rol",
+            "description": "Desarrollador FullStack."
+          },
+          {
+            "title": "Tiempo",
+            "description": "Tres meses."
+          }
+        ]
+      },
+      {
+        "title": "Mis funciones",
+        "items": [
+          {
+            "title": "Armado de la base de datos.",
+            "description": ""
+          },
+          {
+            "title": "Desarrollo del frontend y del backend.",
+            "description": ""
+          },
+          {
+            "title": "Realizar el deploy del sistema y su base de datos.",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Funcionalidades",
+        "items": [
+          {
+            "title": "CRUDs de las entidades.",
+            "description": ""
+          },
+          {
+            "title": "Cotización de ventas mayoristas.",
+            "description": ""
+          },
+          {
+            "title": "Generador de precios.",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "icon": {
+      "source": "",
+      "alt": ""
+    }
+  }
+
+]

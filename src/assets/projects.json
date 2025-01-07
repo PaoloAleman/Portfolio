@@ -1,0 +1,197 @@
+[
+  {
+    "title": "Kirby Pregunta",
+    "images": [
+      {
+        "source": "/projects/kirbyPregunta.png",
+        "alt": "Home"
+      }
+    ],
+    "description": "KirbyPregunta es un juego de preguntas y respuestas estilo ABCD para poner a prueba tus conocimientos en temas como Deportes, Arte e Historia, ¿Te atreves a probarlo?",
+    "technologies": [
+      {
+        "source": "/technologies/java.svg",
+        "alt": "Java"
+      },
+      {
+        "source": "/technologies/spring.svg",
+        "alt": "Spring Boot"
+      },
+      {
+        "source": "/technologies/mysql.svg",
+        "alt": "MySQL"
+      },
+      {
+        "source": "/technologies/react.svg",
+        "alt": "React"
+      },
+      {
+        "source": "/technologies/tailwind.svg",
+        "alt": "Tailwind CSS"
+      }
+    ],
+    "repository": {
+      "source": "/technologies/github.svg",
+      "alt": "KirbyPregunta",
+      "url": ""
+    },
+    "deploy": {
+      "source": "/technologies/railway.svg",
+      "alt": "Railway Deploy",
+      "url": ""
+    },
+    "sections": [
+      {
+        "title": "Modos de juego",
+        "items": [
+          {
+            "title": "Un jugador",
+            "description": "Responde tantas preguntas como puedas antes de equivocarte. Por cada respuesta correcta, ganarás puntos y subirás en el ranking mundial. ¡Las preguntas se adaptan a tu habilidad, así que cuanto mejor lo hagas, más difíciles serán!"
+          },
+          {
+            "title": "Duelo",
+            "description": "Desafía a otros jugadores a un duelo cara a cara. Gana si consigues responder más preguntas correctamente. ¡Pon a prueba tu velocidad y tus conocimientos!"
+          }
+        ]
+      },
+      {
+        "title": "APIs",
+        "items": [
+          {
+            "title": "Gmail",
+            "description": "Para el registro de usuarios."
+          }
+        ]
+      }
+    ],
+    "icon": {
+      "source": "/projects/kirby.png",
+      "alt": "Kirby"
+    }
+  },
+  {
+    "title": "TuristeAR",
+    "images": [
+      {
+        "source": "/projects/turisteAR.png",
+        "alt": "Home"
+      }
+    ],
+    "description": "TuristeAR es una app que crea itinerarios personalizados y permite compartir experiencias, recomendaciones y consejos con otros viajeros en su sección de comunidad.",
+    "technologies": [
+      {
+        "source": "/technologies/nodejs.svg",
+        "alt": "Node.js"
+      },
+      {
+        "source": "/technologies/mysql.svg",
+        "alt": "MySQL"
+      },
+      {
+        "source": "/technologies/react.svg",
+        "alt": "React"
+      },
+      {
+        "source": "/technologies/tailwind.svg",
+        "alt": "Tailwind CSS"
+      }
+    ],
+    "repository": {
+      "source": "/technologies/github.svg",
+      "alt": "Repository",
+      "url": "https://github.com/orgs/TuristeAR/repositories"
+    },
+    "deploy": {
+      "source": "/technologies/koyeb.svg",
+      "alt": "Koyeb Deploy",
+      "url": ""
+    },
+    "sections": [
+      {
+        "title": "Secciones",
+        "items": [
+          {
+            "title": "Destinos",
+            "description": "Explora todos los lugares de Argentina."
+          },
+          {
+            "title": "Comunidad",
+            "description": "Comparte experiencias e interactúa con otros viajeros."
+          },
+          {
+            "title": "Armá tu viaje",
+            "description": "Crea un itinerario personalizado respondiendo algunas preguntas."
+          }
+        ]
+      },
+      {
+        "title": "APIs",
+        "items": [
+          {
+            "title": "Google OAuth2",
+            "description": "Iniciar sesión."
+          },
+          {
+            "title": "FullCalendar",
+            "description": "Calendario interactivo."
+          },
+          {
+            "title": "Google Places",
+            "description": "Obtener los lugares y generar el itinerario."
+          },
+          {
+            "title": "Google Maps",
+            "description": "Mapa interactivo."
+          },
+          {
+            "title": "GeoRef",
+            "description": "Obtener las provincias y localidades argentinas."
+          },
+          {
+            "title": "Imgur",
+            "description": "Guardar las imágenes."
+          }
+        ]
+      }
+    ],
+    "icon": {
+      "source": "/projects/turistearIcon.png",
+      "alt": "TuristeAR"
+    }
+  },
+  {
+    "title": "River de Gallardo",
+    "images": [
+      {
+        "source": "/projects/riverDeGallardo.png",
+        "alt": "Home"
+      }
+    ],
+    "description": "Un repaso del ciclo de Marcelo Gallardo en River Plate, destacando su importancia y los títulos logrados bajo su liderazgo como el mejor técnico de la historia del club.",
+    "technologies": [
+      {
+        "source": "/technologies/react.svg",
+        "alt": "React"
+      },
+      {
+        "source": "/technologies/tailwind.svg",
+        "alt": "Tailwind CSS"
+      }
+    ],
+    "repository": {
+      "source": "/technologies/github.svg",
+      "alt": "Repository",
+      "url": "https://github.com/PaoloAleman/Gallardo"
+    },
+    "deploy": {
+      "source": "/technologies/netlify.svg",
+      "alt": "Netlify Deploy",
+      "url": "https://riverdegallardo.netlify.app/"
+    },
+    "sections": [],
+    "icon": {
+      "source": "/projects/river.svg",
+      "alt": "River"
+    }
+  }
+]
