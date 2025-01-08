@@ -9,7 +9,7 @@ export const WorkCard = (props : { work : Project}) => {
         <>
             <div className="card md:card-side bg-[#310000] boxShadow">
                 {work.images.map((data, index) => (
-                    <img src={data.source} key={index} alt={data.alt} className={'md:w-3/12 md:h-3/12 md:rounded-l-xl md:rounded-t-none rounded-t-xl'} />
+                    <img src={data.source} key={index} alt={data.alt} className={'md:w-3/12 md:h-3/12 md:rounded-l-xl md:rounded-tr-none rounded-t-xl'} />
                 ))}
                 <div className="md:card-body p-4">
                     <div className={'flex items-center justify-between'}>
