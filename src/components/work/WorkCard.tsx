@@ -7,7 +7,7 @@ export const WorkCard = (props : { work : Project}) => {
 
     return (
         <>
-            <div className="card md:card-side bg-[#310000] boxShadow">
+            <div className="card md:card-side bg-[#310000] md:boxShadow">
                 {work.images.map((data, index) => (
                     <img src={data.source} key={index} alt={data.alt} className={'md:w-3/12 md:h-3/12 md:rounded-l-xl md:rounded-t-none rounded-t-xl'} />
                 ))}

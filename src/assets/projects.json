@@ -77,7 +77,7 @@
         "alt": "Home"
       }
     ],
-    "description": "TuristeAR es una app que crea itinerarios personalizados y permite compartir experiencias, recomendaciones y consejos con otros viajeros en su sección de comunidad.",
+    "description": "TuristeAR es una app que crea itinerarios personalizados y permite compartir experiencias, recomendaciones y consejos con otros viajeros en la comunidad.",
     "technologies": [
       {
         "source": "/technologies/nodejs.svg",
