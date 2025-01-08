@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "Java", "icon": "./technologies/java.svg" },
+  { "id": 2, "name": "Spring Boot", "icon": "/technologies/spring.svg" },
+  { "id": 3, "name": "MySQL", "icon": "/technologies/mysql.svg" },
+  { "id": 4, "name": "JavaScript", "icon": "/technologies/javascript.svg" },
+  { "id": 5, "name": "Tailwind", "icon": "/technologies/tailwind.svg" },
+  { "id": 6, "name": "Thymeleaf", "icon": "/technologies/thymeleaf.svg" },
+  { "id": 7, "name": "React", "icon": "/technologies/react.svg" },
+  { "id": 8, "name": "HTML", "icon": "/technologies/html.svg" },
+  { "id": 9, "name": "CSS3", "icon": "/technologies/css.svg" },
+  { "id": 10, "name": "TypeScript", "icon": "/technologies/typescript.svg" },
+  { "id": 11, "name": "Railway", "icon": "/technologies/railway.svg" },
+  { "id": 12, "name": "Node.js", "icon": "/technologies/nodejs.svg" }
+]

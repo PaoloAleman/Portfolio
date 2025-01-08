@@ -3,7 +3,7 @@
     "title": "Kirby Pregunta",
     "images": [
       {
-        "source": "/projects/kirbyPregunta.png",
+        "source": "/projects/kirbyPregunta/kirbyPregunta.png",
         "alt": "Home"
       }
     ],
@@ -32,12 +32,12 @@
     ],
     "repository": {
       "source": "/technologies/github.svg",
-      "alt": "KirbyPregunta",
+      "alt": "Repository",
       "url": ""
     },
     "deploy": {
       "source": "/technologies/railway.svg",
-      "alt": "Railway Deploy",
+      "alt": "Railway for the deployment",
       "url": ""
     },
     "sections": [
@@ -65,7 +65,7 @@
       }
     ],
     "icon": {
-      "source": "/projects/kirby.png",
+      "source": "/projects/kirbyPregunta/kirby.png",
       "alt": "Kirby"
     }
   },
@@ -73,7 +73,7 @@
     "title": "TuristeAR",
     "images": [
       {
-        "source": "/projects/turisteAR.png",
+        "source": "/projects/turisteAR/turisteAR.png",
         "alt": "Home"
       }
     ],
@@ -82,6 +82,10 @@
       {
         "source": "/technologies/nodejs.svg",
         "alt": "Node.js"
+      },
+      {
+        "source": "/technologies/typescript.svg",
+        "alt": "TypeScript"
       },
       {
         "source": "/technologies/mysql.svg",
@@ -94,6 +98,10 @@
       {
         "source": "/technologies/tailwind.svg",
         "alt": "Tailwind CSS"
+      },
+      {
+        "source": "/technologies/css.svg",
+        "alt": "CSS3"
       }
     ],
     "repository": {
@@ -103,7 +111,7 @@
     },
     "deploy": {
       "source": "/technologies/koyeb.svg",
-      "alt": "Koyeb Deploy",
+      "alt": "Koyeb for the deployment",
       "url": ""
     },
     "sections": [
@@ -155,7 +163,7 @@
       }
     ],
     "icon": {
-      "source": "/projects/turistearIcon.png",
+      "source": "/projects/turisteAR/turistearIcon.png",
       "alt": "TuristeAR"
     }
   },
@@ -163,15 +171,27 @@
     "title": "River de Gallardo",
     "images": [
       {
-        "source": "/projects/riverDeGallardo.png",
-        "alt": "Home"
+        "source": "/projects/riverDeGallardo/hero.png",
+        "alt": "Hero"
+      },
+      {
+        "source": "/projects/riverDeGallardo/history.png",
+        "alt": "History"
+      },
+      {
+        "source": "/projects/riverDeGallardo/titles.png",
+        "alt": "Titles"
       }
     ],
     "description": "Un repaso del ciclo de Marcelo Gallardo en River Plate, destacando su importancia y los títulos logrados bajo su liderazgo como el mejor técnico de la historia del club.",
     "technologies": [
       {
-        "source": "/technologies/react.svg",
-        "alt": "React"
+        "source": "/technologies/html.svg",
+        "alt": "HTML"
+      },
+      {
+        "source": "/technologies/css.svg",
+        "alt": "CSS3"
       },
       {
         "source": "/technologies/tailwind.svg",
@@ -185,12 +205,12 @@
     },
     "deploy": {
       "source": "/technologies/netlify.svg",
-      "alt": "Netlify Deploy",
+      "alt": "Deploy on Netlify",
       "url": "https://riverdegallardo.netlify.app/"
     },
     "sections": [],
     "icon": {
-      "source": "/projects/river.svg",
+      "source": "/projects/riverDeGallardo/river.svg",
       "alt": "River"
     }
   }

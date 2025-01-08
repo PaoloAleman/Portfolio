@@ -6,7 +6,7 @@ import {Project} from "../../assets/types";
 export const ProjectCard = (props : {project : Project})=>{
     const {project} = props;
     return (
-        <div className="card card-compact bg-base-100 shadow-xl">
+        <div className="card card-compact bg-[#310000] boxShadow">
                 <ImageCarousel images={project.images} />
             <div className="card-body">
                 <div className={'flex items-center justify-between'}>

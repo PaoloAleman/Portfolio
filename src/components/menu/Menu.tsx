@@ -1,42 +1,44 @@
-import { Link } from 'react-scroll';
+import { useState } from "react";
 
-export const Menu = () => {
+const sections = [
+    {
+        name: "Home",
+        src: "/menu/home.svg",
+    },
+    {
+        name: "Works",
+        src: "/menu/work.svg",
+    },
+    {
+        name: "Projects",
+        src: "/menu/projects.svg",
+    },
+];
+
+export const Menu = ({ onSectionChange }) => {
+    const [selected, setSelected] = useState("home"); // Estado para rastrear el seleccionado
+
+    const handleSectionChange = (sectionName) => {
+        setSelected(sectionName);
+        onSectionChange(sectionName);
+    };
+
     return (
-        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50">
-            <ul className="menu menu-horizontal bg-base-200 rounded-box animate-slide-up">
-                <li>
-                    <Link
-                        to="hero"
-                        smooth={true}
-                        duration={800}
-                        className="tooltip"
-                        data-tip="Home"
-                    >
-                        <img src={'/menu/home.svg'} alt={'Home'} className={'w-10'} />
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="works"
-                        smooth={true}
-                        duration={800}
-                        className="tooltip"
-                        data-tip="Works"
-                    >
-                        <img src={'/menu/work.svg'} alt={'Works'} className={'w-10'} />
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="projects"
-                        smooth={true}
-                        duration={800}
-                        className="tooltip"
-                        data-tip="Projects"
-                    >
-                        <img src={'/menu/projects.svg'} alt={'Projects'} className={'w-10'} />
-                    </Link>
-                </li>
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50 ">
+            <ul className="menu menu-horizontal bg-[#310000] rounded-box animate-slide-up boxShadow">
+                {sections.map((item, index) => (
+                    <li key={index}>
+                        <button
+                            onClick={() => handleSectionChange(item.name.toLowerCase())}
+                            className={`tooltip p-5 px-10 ${
+                                selected === item.name.toLowerCase() ? "gradient-active" : "gradient"
+                            }`}
+                            data-tip={item.name}
+                        >
+                            <img src={item.src} alt={item.name} className={"w-10"} />
+                        </button>
+                    </li>
+                ))}
             </ul>
         </div>
     );

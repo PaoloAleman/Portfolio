@@ -1,20 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import dataIcons from '../../assets/icons.json';
 
-const icons = [
-    { id: 1, name: "Java", icon: "./technologies/java.svg" },
-    { id: 2, name: "Spring Boot", icon: "/technologies/spring.svg" },
-    { id: 4, name: "MySQL", icon: "/technologies/mysql.svg" },
-    { id: 5, name: "React", icon: "/technologies/react.svg" },
-    { id: 6, name: "Tailwind", icon: "/technologies/tailwind.svg" },
-    { id: 8, name: "JavaScript", icon: "/technologies/javascript.svg" },
-    { id: 7, name: "Thymeleaf", icon: "/technologies/thymeleaf.svg" },
-    { id: 3, name: "Node.js", icon: "/technologies/nodejs.svg" },
-];
+const icons = dataIcons;
 
 const IconAnimation = () => {
     const totalIcons = icons.length;
-    const radius = 250;
+    const radius = 280;
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -71,7 +63,7 @@ const IconAnimation = () => {
                             <img
                                 src={icon.icon}
                                 alt={icon.name}
-                                className="w-16 h-16 hover:filter hover:drop-shadow-[0px_0px_9px_white]"
+                                className="w-16 h-16 hover:filter hover:drop-shadow-[0px_0px_9px_black]"
                             />
                         </motion.div>
                     </div>

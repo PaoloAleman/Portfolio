@@ -1,38 +1,8 @@
 import { motion } from "framer-motion";
 import IconAnimation from "./IconAnimation";
+import dataLinks from "../../assets/links.json"
 
-const links = [
-    {
-        href: "https://github.com/PaoloAleman",
-        src: "/contact/github.svg",
-        alt: "GitHub",
-        tip: "GitHub",
-    },
-    {
-        href: "https://www.linkedin.com/in/paolo-aleman-35aa0624a/",
-        src: "/contact/linkedin.svg",
-        alt: "LinkedIn",
-        tip: "LinkedIn",
-    },
-    {
-        href: "mailto:paoloaleman86@gmail.com",
-        src: "/contact/gmail.svg",
-        alt: "Gmail",
-        tip: "Gmail",
-    },
-    {
-        href: "/contact/paoloAlemanCV.pdf",
-        src: "/contact/cv.svg",
-        alt: "CV",
-        tip: "CV",
-    },
-    {
-        href: "https://www.instagram.com/paolo_2309/",
-        src: "/contact/instagram.svg",
-        alt: "Instagram",
-        tip: "Instagram",
-    },
-]
+const links = dataLinks;
 
 export const Hero = () => {
     return (
@@ -46,7 +16,7 @@ export const Hero = () => {
                 >
                     <div>
                         <motion.h1
-                            className="text-6xl font-bold"
+                            className="text-7xl font-bold"
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1, delay: 0.3 }}
@@ -54,7 +24,7 @@ export const Hero = () => {
                             Paolo Aleman
                         </motion.h1>
                         <motion.h2
-                            className="text-5xl font-bold"
+                            className="text-6xl font-bold"
                             initial={{ opacity: 0, x: 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1, delay: 0.6 }}

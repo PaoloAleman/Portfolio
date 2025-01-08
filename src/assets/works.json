@@ -32,12 +32,12 @@
     ],
     "repository": {
       "source": "/technologies/github.svg",
-      "alt": "Repository",
+      "alt": "Github for versioning",
       "url": ""
     },
     "deploy": {
       "source": "/technologies/railway.svg",
-      "alt": "Railway Deploy",
+      "alt": "Railway for the deployment",
       "url": ""
     },
     "sections": [
@@ -45,11 +45,11 @@
         "title": "Datos",
         "items": [
           {
-            "title": "Rol",
+            "title": "Rol:",
             "description": "Desarrollador FullStack."
           },
           {
-            "title": "Tiempo",
+            "title": "Tiempo:",
             "description": "Tres meses."
           }
         ]
@@ -89,10 +89,7 @@
         ]
       }
     ],
-    "icon": {
-      "source": "",
-      "alt": ""
-    }
+    "icon": null
   }
 
 ]

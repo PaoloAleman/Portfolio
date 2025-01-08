@@ -1,0 +1,32 @@
+[
+  {
+    "href": "https://github.com/PaoloAleman",
+    "src": "/contact/github.svg",
+    "alt": "GitHub",
+    "tip": "GitHub"
+  },
+  {
+    "href": "https://www.linkedin.com/in/paolo-aleman-35aa0624a/",
+    "src": "/contact/linkedin.svg",
+    "alt": "LinkedIn",
+    "tip": "LinkedIn"
+  },
+  {
+    "href": "mailto:paoloaleman86@gmail.com",
+    "src": "/contact/gmail.svg",
+    "alt": "Gmail",
+    "tip": "Gmail"
+  },
+  {
+    "href": "/contact/paoloAlemanCV.pdf",
+    "src": "/contact/cv.svg",
+    "alt": "CV",
+    "tip": "CV"
+  },
+  {
+    "href": "https://www.instagram.com/paolo_2309/",
+    "src": "/contact/instagram.svg",
+    "alt": "Instagram",
+    "tip": "Instagram"
+  }
+]

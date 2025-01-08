@@ -7,7 +7,7 @@ export const WorkCard = (props : { work : Project}) => {
 
     return (
         <>
-            <div className="card lg:card-side bg-base-100 shadow-xl">
+            <div className="card lg:card-side bg-[#310000] boxShadow">
                 {work.images.map((data, index) => (
                     <img src={data.source} key={index} alt={data.alt} className={'w-3/12 h-3/12 rounded-l-xl'} />
                 ))}
@@ -15,13 +15,28 @@ export const WorkCard = (props : { work : Project}) => {
                     <div className={'flex items-center justify-between'}>
                         <h2 className="card-title">{work.title}</h2>
                         <div className={'flex items-center gap-6'}>
-                            <a href={work.repository.url} target={'_blank'}><ToolTip
-                                image={"/technologies/github.svg"}
-                                altImage={"GitHub"}
-                                dataTip={"Repository"}/></a>
-                            <a href={work.deploy.url}><ToolTip image={work.deploy.source}
-                                                                  altImage={work.deploy.alt}
-                                                                  dataTip={work.deploy.alt}/></a>
+                            {work.repository.url != "" ?
+                                <a href={work.repository.url} target={'_blank'}><ToolTip
+                                    image={work.repository.source}
+                                    altImage={work.repository.alt}
+                                    dataTip={work.repository.alt}/></a>
+                            :
+                                <ToolTip
+                                    image={work.repository.source}
+                                    altImage={work.repository.alt}
+                                    dataTip={work.repository.alt}/>
+                            }
+                            {work.deploy.url != "" ?
+                                <a href={work.deploy.url} target={'_blank'}><ToolTip
+                                    image={work.deploy.source}
+                                    altImage={work.deploy.alt}
+                                    dataTip={work.deploy.alt}/></a>
+                                :
+                                <ToolTip
+                                    image={work.deploy.source}
+                                    altImage={work.deploy.alt}
+                                    dataTip={work.deploy.alt}/>
+                            }
                         </div>
                     </div>
                     <p className={'my-4'}>{work.description}</p>
