@@ -39,7 +39,7 @@ const IconAnimation = () => {
     };
 
     return (
-        <motion.div variants={containerVariants} initial={'hidden'} whileInView={'visible'} className="relative w-[400px] h-[400px] flex items-center justify-center rounded-full">
+        <motion.div variants={containerVariants} initial={'hidden'} whileInView={'visible'} className="relative w-[400px] h-[400px] lg:flex items-center justify-center hidden rounded-full">
             {icons.map((icon, index) => {
                 const { x, y } = getPosition(index);
                 return (

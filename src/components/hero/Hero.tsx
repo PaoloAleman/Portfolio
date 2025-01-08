@@ -7,16 +7,16 @@ const links = dataLinks;
 export const Hero = () => {
     return (
         <>
-            <div className="flex items-center w-full lg:justify-around lg:flex-row flex-col min-h-[100vh]">
+            <div className="flex items-center w-full lg:justify-around lg:flex-row justify-center min-h-[100vh]">
                 <motion.div
-                    className="flex flex-col gap-6"
+                    className="flex flex-col md:gap-6 gap-10"
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     <div>
                         <motion.h1
-                            className="text-7xl font-bold"
+                            className="lg:text-7xl md:text-6xl text-4xl font-bold lg:text-left text-center"
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1, delay: 0.3 }}
@@ -24,7 +24,7 @@ export const Hero = () => {
                             Paolo Aleman
                         </motion.h1>
                         <motion.h2
-                            className="text-6xl font-bold"
+                            className="lg:text-6xl md:text-5xl text-3xl font-bold lg:text-left text-center"
                             initial={{ opacity: 0, x: 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1, delay: 0.6 }}
@@ -33,7 +33,7 @@ export const Hero = () => {
                         </motion.h2>
                     </div>
                     <motion.div
-                        className="flex flex-row gap-10"
+                        className="grid grid-cols-6 gap-y-6 md:gap-10 "
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.9 }}
@@ -41,13 +41,13 @@ export const Hero = () => {
                         {links.map((icon, index) => (
                             <motion.div
                                 data-tip={icon.tip}
-                                className="tooltip"
+                                className="tooltip mx-auto"
                                 key={index}
                                 whileHover={{ scale: 1.5, rotate: 0 }}
                                 whileTap={{ scale: 0.9 }}
                             >
                                 <a href={icon.href} target="_blank" rel="noopener noreferrer">
-                                    <img src={icon.src} alt={icon.alt} className="w-8" />
+                                    <img src={icon.src} alt={icon.alt} className="md:w-8 w-6" />
                                 </a>
                             </motion.div>
                         ))}
