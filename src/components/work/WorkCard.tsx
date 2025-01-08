@@ -7,19 +7,21 @@ export const WorkCard = (props : { work : Project}) => {
 
     return (
         <>
-            <div className="card md:card-side bg-[#310000] md:boxShadow">
+            <div className="card md:card-side bg-[#310000] boxShadow">
                 {work.images.map((data, index) => (
                     <img src={data.source} key={index} alt={data.alt} className={'md:w-3/12 md:h-3/12 md:rounded-l-xl md:rounded-t-none rounded-t-xl'} />
                 ))}
                 <div className="md:card-body p-4">
                     <div className={'flex items-center justify-between'}>
                         <h2 className="card-title">{work.title}</h2>
-                        <div className={'flex items-center gap-6'}>
+                        <div className={'hidden lg:flex items-center gap-6'}>
                             {work.repository.url != "" ?
-                                <a href={work.repository.url} target={'_blank'}><ToolTip
+                                <a href={work.repository.url} target={'_blank'}>
+                                    <ToolTip
                                     image={work.repository.source}
                                     altImage={work.repository.alt}
-                                    dataTip={work.repository.alt}/></a>
+                                    dataTip={work.repository.alt}/>
+                                </a>
                             :
                                 <ToolTip
                                     image={work.repository.source}
@@ -27,15 +29,40 @@ export const WorkCard = (props : { work : Project}) => {
                                     dataTip={work.repository.alt}/>
                             }
                             {work.deploy.url != "" ?
-                                <a href={work.deploy.url} target={'_blank'}><ToolTip
+                                <a href={work.deploy.url} target={'_blank'}>
+                                    <ToolTip
                                     image={work.deploy.source}
                                     altImage={work.deploy.alt}
-                                    dataTip={work.deploy.alt}/></a>
+                                    dataTip={work.deploy.alt}/>
+                                </a>
                                 :
                                 <ToolTip
                                     image={work.deploy.source}
                                     altImage={work.deploy.alt}
                                     dataTip={work.deploy.alt}/>
+                            }
+                        </div>
+
+                        <div className={'lg:hidden flex items-center gap-6'}>
+                            {work.repository.url != "" ?
+                                <a href={work.repository.url} target={'_blank'}>
+                                    <img src={work.repository.source} alt={work.repository.alt}
+                                         className={'w-8 h-8 cursor-pointer bg-[#310000]'}/>
+
+                                </a>
+                                :
+                                <img src={work.repository.source} alt={work.repository.alt}
+                                     className={'w-8 h-8 cursor-pointer bg-[#310000]'}/>
+                            }
+                            {work.deploy.url != "" ?
+                                <a href={work.deploy.url} target={'_blank'}>
+                                    <img src={work.deploy.source} alt={work.deploy.alt}
+                                         className={'w-8 h-8 cursor-pointer bg-[#310000]'}/>
+
+                                </a>
+                                :
+                                <img src={work.deploy.source} alt={work.deploy.alt}
+                                     className={'w-8 h-8 cursor-pointer bg-[#310000]'}/>
                             }
                         </div>
                     </div>
