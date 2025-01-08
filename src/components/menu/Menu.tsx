@@ -24,8 +24,8 @@ export const Menu = ({ onSectionChange }) => {
     };
 
     return (
-        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50 ">
-            <ul className="menu menu-horizontal bg-[#310000] grid grid-cols-3 rounded-box animate-slide-up">
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50  ">
+            <ul className="menu menu-horizontal bg-[#310000] grid grid-cols-3 rounded-box animate-slide-up boxShadow">
                 {sections.map((item, index) => (
                     <li key={index}>
                         <button

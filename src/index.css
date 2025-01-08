@@ -29,7 +29,7 @@ h1, h2, h3, p, li{
 }
 
 .boxShadow {
-    box-shadow: 0 5px 155px 1px rgb(0, 0, 0);
+    box-shadow: 0 1px 40px 1px rgb(0, 0, 0);
 }
 
 .tooltip {

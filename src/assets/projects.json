@@ -45,11 +45,11 @@
         "title": "Modos de juego",
         "items": [
           {
-            "title": "Un jugador",
+            "title": "Un jugador:",
             "description": "Responde tantas preguntas como puedas antes de equivocarte. Por cada respuesta correcta, ganarás puntos y subirás en el ranking mundial. ¡Las preguntas se adaptan a tu habilidad, así que cuanto mejor lo hagas, más difíciles serán!"
           },
           {
-            "title": "Duelo",
+            "title": "Duelo:",
             "description": "Desafía a otros jugadores a un duelo cara a cara. Gana si consigues responder más preguntas correctamente. ¡Pon a prueba tu velocidad y tus conocimientos!"
           }
         ]
@@ -58,7 +58,7 @@
         "title": "APIs",
         "items": [
           {
-            "title": "Gmail",
+            "title": "Gmail:",
             "description": "Para el registro de usuarios."
           }
         ]
@@ -119,15 +119,15 @@
         "title": "Secciones",
         "items": [
           {
-            "title": "Destinos",
+            "title": "Destinos:",
             "description": "Explora todos los lugares de Argentina."
           },
           {
-            "title": "Comunidad",
+            "title": "Comunidad:",
             "description": "Comparte experiencias e interactúa con otros viajeros."
           },
           {
-            "title": "Armá tu viaje",
+            "title": "Armá tu viaje:",
             "description": "Crea un itinerario personalizado respondiendo algunas preguntas."
           }
         ]
@@ -136,27 +136,27 @@
         "title": "APIs",
         "items": [
           {
-            "title": "Google OAuth2",
+            "title": "Google OAuth2:",
             "description": "Iniciar sesión."
           },
           {
-            "title": "FullCalendar",
+            "title": "FullCalendar:",
             "description": "Calendario interactivo."
           },
           {
-            "title": "Google Places",
+            "title": "Google Places:",
             "description": "Obtener los lugares y generar el itinerario."
           },
           {
-            "title": "Google Maps",
+            "title": "Google Maps:",
             "description": "Mapa interactivo."
           },
           {
-            "title": "GeoRef",
+            "title": "GeoRef:",
             "description": "Obtener las provincias y localidades argentinas."
           },
           {
-            "title": "Imgur",
+            "title": "Imgur:",
             "description": "Guardar las imágenes."
           }
         ]
