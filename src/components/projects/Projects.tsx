@@ -7,24 +7,24 @@ const dataProjects : Project[] = projectsData as Project[];
 
 export const Projects = () => {
     return (
-        <div className={'min-h-[85vh] flex justify-center items-center'}>
+        <div className={'lg:min-h-[85vh] md:min-h-[200vh] min-h-[280vh] flex justify-center items-center'}>
             <motion.div
                 initial={{opacity: 0, scale: 0.5}}
                 whileInView={{opacity: 1, scale: 1}}
                 transition={{duration: 1, ease: "easeOut"}}
             >
                 <motion.h2
-                    className={'text-5xl font-bold text-center mb-20'}
+                    className={'md:text-5xl text-4xl font-bold text-center mb-20'}
                     initial={{opacity: 0, y: -20}}
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.6}}
                 >
                     Projects
                 </motion.h2>
-                <div className={'flex items-center lg:justify-between flex-wrap md:gap-0 gap-8 w-[95%] mx-auto'}>
+                <div className={'flex items-center lg:justify-between flex-wrap lg:gap-0 gap-8 lg:w-[95%] w-[90%] mx-auto'}>
                     {dataProjects.map((data, index) => (
                         <motion.div
-                            className={'lg:w-[30%]'}
+                            className={'lg:w-[32%]'}
                             key={index}
                             initial={{opacity: 0, y: 100}}
                             whileInView={{opacity: 1, y: 0}}

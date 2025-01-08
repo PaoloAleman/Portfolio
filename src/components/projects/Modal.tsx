@@ -17,12 +17,12 @@ export const Modal = (
     };
 
     const colClasses = {
-        1: "grid-cols-1",
-        2: "grid-cols-2",
-        3: "grid-cols-3",
-        4: "grid-cols-4",
-        5: "grid-cols-5",
-        6: "grid-cols-6",
+        1: "md:grid-cols-1",
+        2: "md:grid-cols-2",
+        3: "md:grid-cols-3",
+        4: "md:grid-cols-4",
+        5: "md:grid-cols-5",
+        6: "md:grid-cols-6",
     };
 
     const closeWithAnimation = () => {
@@ -47,7 +47,7 @@ export const Modal = (
 
     return (
         <>
-            <button className="btn text-white bg-[#7d0000] border border-none hover:bg-[#c10000]" onClick={() => setIsOpen(true)}>
+            <button className="md:block hidden btn text-white bg-[#7d0000] border border-none hover:bg-[#c10000]" onClick={() => setIsOpen(true)}>
                 See more
             </button>
             {isOpen && (
@@ -58,7 +58,7 @@ export const Modal = (
                     onClick={() => closeWithAnimation()}
                 >
                     <div
-                        className={`modal-box w-11/12 max-w-5xl transform transition-all bg-[#310000] duration-300 ease-out ${
+                        className={`modal-box md:w-[95%] w-[90%] max-w-5xl transform transition-all bg-[#310000] duration-300 ease-out ${
                             isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                         } relative overflow-visible`}
                         onClick={(e) => e.stopPropagation()}
@@ -95,7 +95,7 @@ export const Modal = (
                                 </div>
                             ))}
                         </div>
-                        <div className="modal-action md:hidden block">
+                        <div className="modal-action md:hidden flex justify-end">
                             <button
                                 className="btn"
                                 onClick={() => closeWithAnimation()}
