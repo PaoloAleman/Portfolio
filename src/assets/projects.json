@@ -32,12 +32,12 @@
     ],
     "repository": {
       "source": "/technologies/github.svg",
-      "alt": "Repository",
-      "url": ""
+      "alt": "Repositorio",
+      "url": "https://github.com/PaoloAleman/KirbyPregunta_Backend"
     },
     "deploy": {
       "source": "/technologies/railway.svg",
-      "alt": "Railway for the deployment",
+      "alt": "Railway para el deploy",
       "url": ""
     },
     "sections": [
@@ -106,12 +106,12 @@
     ],
     "repository": {
       "source": "/technologies/github.svg",
-      "alt": "Repository",
+      "alt": "Repositorio",
       "url": "https://github.com/orgs/TuristeAR/repositories"
     },
     "deploy": {
       "source": "/technologies/koyeb.svg",
-      "alt": "Koyeb for the deployment",
+      "alt": "Koyeb para el deploy",
       "url": ""
     },
     "sections": [
@@ -200,12 +200,12 @@
     ],
     "repository": {
       "source": "/technologies/github.svg",
-      "alt": "Repository",
+      "alt": "Repositorio",
       "url": "https://github.com/PaoloAleman/Gallardo"
     },
     "deploy": {
       "source": "/technologies/netlify.svg",
-      "alt": "Deploy on Netlify",
+      "alt": "Netlify para el deploy",
       "url": "https://riverdegallardo.netlify.app/"
     },
     "sections": [],

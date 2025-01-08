@@ -19,7 +19,7 @@ export const Projects = () => {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.6}}
                 >
-                    Projects
+                    Proyectos
                 </motion.h2>
                 <div className={'flex items-center lg:justify-between flex-wrap lg:gap-0 gap-8 lg:w-[95%] w-[90%] mx-auto'}>
                     {dataProjects.map((data, index) => (

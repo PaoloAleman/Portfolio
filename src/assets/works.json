@@ -32,12 +32,12 @@
     ],
     "repository": {
       "source": "/technologies/github.svg",
-      "alt": "Github for versioning",
+      "alt": "Github para el control de versiones",
       "url": ""
     },
     "deploy": {
       "source": "/technologies/railway.svg",
-      "alt": "Railway for the deployment",
+      "alt": "Railway para el deploy",
       "url": ""
     },
     "sections": [

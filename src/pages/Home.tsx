@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export const Home = () => {
-    const [activeSection, setActiveSection] = useState("home");
+    const [activeSection, setActiveSection] = useState("inicio");
 
     const renderSection = () => {
         switch (activeSection) {
-            case "home":
+            case "inicio":
                 return (
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
@@ -21,7 +21,7 @@ export const Home = () => {
                         <Hero />
                     </motion.div>
                 );
-            case "works":
+            case "trabajos":
                 return (
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
@@ -32,7 +32,7 @@ export const Home = () => {
                         <Works />
                     </motion.div>
                 );
-            case "projects":
+            case "proyectos":
                 return (
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

@@ -2,21 +2,21 @@ import { useState } from "react";
 
 const sections = [
     {
-        name: "Home",
+        name: "Inicio",
         src: "/menu/home.svg",
     },
     {
-        name: "Works",
+        name: "Trabajos",
         src: "/menu/work.svg",
     },
     {
-        name: "Projects",
+        name: "Proyectos",
         src: "/menu/projects.svg",
     },
 ];
 
 export const Menu = ({ onSectionChange }) => {
-    const [selected, setSelected] = useState("home"); // Estado para rastrear el seleccionado
+    const [selected, setSelected] = useState("inicio");
 
     const handleSectionChange = (sectionName) => {
         setSelected(sectionName);

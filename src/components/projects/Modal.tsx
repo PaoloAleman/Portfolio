@@ -48,7 +48,7 @@ export const Modal = (
     return (
         <>
             <button className="md:block hidden btn text-white bg-[#7d0000] border border-none hover:bg-[#c10000]" onClick={() => setIsOpen(true)}>
-                See more
+                Ver más
             </button>
             {isOpen && (
                 <div

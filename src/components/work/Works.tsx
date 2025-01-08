@@ -19,7 +19,7 @@ export const Works = () => {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.6}}
                 >
-                    Works
+                    Trabajos
                 </motion.h2>
                 <div className={`flex items-center ${works.length < 2 ? 'lg:justify-center' : ' lg:justify-between' } flex-wrap md:gap-0 gap-8 md:w-[95%] w-[90%] mx-auto`}>
                     {works.map((data, index) => (
