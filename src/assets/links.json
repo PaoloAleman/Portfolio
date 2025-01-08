@@ -28,5 +28,11 @@
     "src": "/contact/instagram.svg",
     "alt": "Instagram",
     "tip": "Instagram"
+  },
+  {
+    "href": "https://wa.me/qr/O6PGT4RAMINRM1",
+    "src": "/contact/whatsapp.svg",
+    "alt": "Whatsapp",
+    "tip": "Whatsapp"
   }
 ]

@@ -33,7 +33,7 @@ export const Hero = () => {
                         </motion.h2>
                     </div>
                     <motion.div
-                        className="flex flex-row gap-12"
+                        className="flex flex-row gap-10"
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.9 }}

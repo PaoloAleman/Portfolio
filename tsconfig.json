@@ -15,7 +15,7 @@
     "noEmit": true,
     "noImplicitReturns": false,
     "jsx": "react-jsx",
-    "types": ["jest", "node", "@testing-library/jest-dom", "vite/client"],
+    "types": ["node","vite/client"],
   },
   "include": ["src"]
 }
