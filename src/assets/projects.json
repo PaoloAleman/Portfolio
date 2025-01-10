@@ -3,7 +3,11 @@
     "title": "Kirby Pregunta",
     "images": [
       {
-        "source": "/projects/kirbyPregunta/kirbyPregunta.png",
+        "source": "/projects/kirbyPregunta/login.png",
+        "alt": "Login"
+      },
+      {
+        "source": "/projects/kirbyPregunta/home.png",
         "alt": "Home"
       }
     ],
@@ -33,7 +37,7 @@
     "repository": {
       "source": "/technologies/github.svg",
       "alt": "Repositorio",
-      "url": "https://github.com/PaoloAleman/KirbyPregunta_Backend"
+      "url": "https://github.com/orgs/KirbyPregunta/repositories"
     },
     "deploy": {
       "source": "/technologies/railway.svg",
