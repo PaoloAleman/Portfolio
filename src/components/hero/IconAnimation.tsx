@@ -6,7 +6,7 @@ const icons = dataIcons;
 
 const IconAnimation = () => {
     const totalIcons = icons.length;
-    const radius = 280;
+    const radius = 240;
 
     const containerVariants = {
         hidden: { opacity: 0 },

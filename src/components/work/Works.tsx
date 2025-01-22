@@ -7,7 +7,7 @@ const works: Project[] = worksData as Project[];
 
 export const Works = () => {
     return (
-        <div className={'md:min-h-[85vh] min-h-[160vh] flex justify-center items-center'}>
+        <div className={'lg:min-h-[140vh] md:min-h-[200vh] min-h-[280vh] flex pt-20'}>
             <motion.div
                 initial={{opacity: 0, scale: 0.5}}
                 whileInView={{opacity: 1, scale: 1}}
@@ -24,7 +24,7 @@ export const Works = () => {
                 <div className={`flex items-center ${works.length < 2 ? 'lg:justify-center' : ' lg:justify-between' } flex-wrap md:gap-0 gap-8 md:w-[95%] w-[90%] mx-auto`}>
                     {works.map((data, index) => (
                         <motion.div
-                            className={'lg:w-[49%]'}
+                            className={'lg:w-[70%]'}
                             key={index}
                             initial={{opacity: 0, y: 100}}
                             whileInView={{opacity: 1, y: 0}}

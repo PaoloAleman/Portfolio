@@ -11,7 +11,7 @@ export const ProjectCard = (props : {project : Project})=>{
             <div className="md:card-body p-4">
                 <div className={'flex items-center justify-between'}>
                     <h2 className="card-title">{project.title}</h2>
-                    <div className={'hidden lg:flex items-center md:gap-6 gap-4'}>
+                    <div className={'hidden lg:flex items-center md:gap-6 gap-4 mr-2'}>
                         <a href={project.repository.url} target={'_blank'}><ToolTip image={project.repository.source}
                                                               altImage={project.repository.alt}
                                                               dataTip={project.repository.alt}/></a>
@@ -29,7 +29,7 @@ export const ProjectCard = (props : {project : Project})=>{
                 </div>
                 <p className={'md:my-2 my-4'}>{project.description}</p>
                 <div className="flex items-center md:justify-between md:flex-row flex-col justify-center md:gap-y-0 gap-y-6">
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-4">
                         {project.technologies.map((technology, index) => (
                             <ToolTip image={technology.source} altImage={technology.alt}
                                      dataTip={technology.alt} key={index}/>

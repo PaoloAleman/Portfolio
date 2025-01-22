@@ -7,7 +7,7 @@ const dataProjects : Project[] = projectsData as Project[];
 
 export const Projects = () => {
     return (
-        <div className={'lg:min-h-[85vh] md:min-h-[200vh] min-h-[280vh] flex justify-center items-center'}>
+        <div className={'lg:min-h-[140vh] md:min-h-[200vh] min-h-[280vh] flex pt-20'}>
             <motion.div
                 initial={{opacity: 0, scale: 0.5}}
                 whileInView={{opacity: 1, scale: 1}}
