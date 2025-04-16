@@ -7,7 +7,7 @@ const dataProjects : Project[] = projectsData as Project[];
 
 export const Projects = () => {
     return (
-        <div className={'lg:min-h-[140vh] md:min-h-[200vh] min-h-[280vh] flex pt-20'}>
+        <div className={'lg:min-h-[140vh] flex pb-20'}>
             <motion.div
                 initial={{opacity: 0, scale: 0.5}}
                 whileInView={{opacity: 1, scale: 1}}
@@ -21,10 +21,10 @@ export const Projects = () => {
                 >
                     Proyectos
                 </motion.h2>
-                <div className={'flex items-center lg:justify-between flex-wrap lg:gap-0 gap-8 lg:w-[95%] w-[90%] mx-auto'}>
+                <div className={'grid md:grid-cols-3 grid-cols-1  md:gap-y-8 md:gap-x-0 gap-8 lg:w-[95%] w-[90%] mx-auto'}>
                     {dataProjects.map((data, index) => (
                         <motion.div
-                            className={'lg:w-[32%]'}
+                            className={'lg:w-[95%] mx-auto'}
                             key={index}
                             initial={{opacity: 0, y: 100}}
                             whileInView={{opacity: 1, y: 0}}

@@ -28,6 +28,14 @@
       {
         "source": "/technologies/javascript.svg",
         "alt": "JavaScript"
+      },
+      {
+        "source": "/technologies/tailwind.svg",
+        "alt": "Tailwind CSS"
+      },
+      {
+        "source": "/technologies/railway.svg",
+        "alt": "Railway"
       }
     ],
     "repository": {
@@ -36,8 +44,8 @@
       "url": ""
     },
     "deploy": {
-      "source": "/technologies/railway.svg",
-      "alt": "Railway para el deploy",
+      "source": "/technologies/internet.svg",
+      "alt": "Visitar",
       "url": ""
     },
     "sections": [
@@ -84,6 +92,106 @@
           },
           {
             "title": "Generador de precios.",
+            "description": ""
+          }
+        ]
+      }
+    ],
+    "icon": null
+  },
+  {
+    "title": "Glomax",
+    "images": [
+      {
+        "source": "/works/glomax.jpg",
+        "alt": "Glomax"
+      }
+    ],
+    "description": "Un e-commerce desarrollado para la marca de indumentaria femenina Glomax, que ofrece una experiencia de compra completa: optimización SEO, carrito inteligente, múltiples métodos de pago, catálogo dinámico de productos, integración con login mediante Google y muchas funcionalidades más que potencian las ventas y mejoran la experiencia del usuario.",
+    "technologies": [
+      {
+        "source": "/technologies/java.svg",
+        "alt": "Java"
+      },
+      {
+        "source": "/technologies/spring.svg",
+        "alt": "Spring Boot"
+      },
+      {
+        "source": "/technologies/mysql.svg",
+        "alt": "MySQL"
+      },
+      {
+        "source": "/technologies/react.svg",
+        "alt": "React"
+      },
+      {
+        "source": "/technologies/typescript.svg",
+        "alt": "TypeScript"
+      },
+      {
+        "source": "/technologies/tailwind.svg",
+        "alt": "Tailwind CSS"
+      },
+      {
+        "source": "/technologies/railway.svg",
+        "alt": "Railway"
+      }
+    ],
+    "repository": {
+      "source": "/technologies/github.svg",
+      "alt": "Github para el control de versiones",
+      "url": ""
+    },
+    "deploy": {
+      "source": "/technologies/internet.svg",
+      "alt": "Visitar",
+      "url": "https://glomax.com/"
+    },
+    "sections": [
+      {
+        "title": "Datos",
+        "items": [
+          {
+            "title": "Rol:",
+            "description": "Desarrollador FullStack."
+          },
+          {
+            "title": "Tiempo:",
+            "description": "Un mes y quince días."
+          }
+        ]
+      },
+      {
+        "title": "Mis funciones",
+        "items": [
+          {
+            "title": "Armado de la base de datos.",
+            "description": ""
+          },
+          {
+            "title": "Desarrollo del frontend y del backend.",
+            "description": ""
+          },
+          {
+            "title": "Realizar el deploy del sistema y su base de datos.",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "title": "Funcionalidades",
+        "items": [
+          {
+            "title": "Carrito de compras.",
+            "description": ""
+          },
+          {
+            "title": "Login con Google.",
+            "description": ""
+          },
+          {
+            "title": "Integración con Mercado Pago.",
             "description": ""
           }
         ]

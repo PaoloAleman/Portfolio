@@ -1,40 +1,37 @@
-import {WorkCard} from "./WorkCard";
+import { WorkCard } from "./WorkCard";
 import { motion } from "framer-motion";
 import worksData from '../../assets/works.json';
-import {Project} from "../../assets/types";
+import { Project } from "../../assets/types";
 
 const works: Project[] = worksData as Project[];
 
 export const Works = () => {
     return (
-        <div className={'lg:min-h-[140vh] md:min-h-[200vh] min-h-[280vh] flex pt-20'}>
-            <motion.div
-                initial={{opacity: 0, scale: 0.5}}
-                whileInView={{opacity: 1, scale: 1}}
-                transition={{duration: 1, ease: "easeOut"}}
+        <section className="w-full flex flex-col items-center py-20 lg:min-h-[100vh]">
+            <motion.h2
+                className="md:text-5xl text-4xl font-bold text-center mb-20"
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <motion.h2
-                    className={'md:text-5xl text-4xl font-bold text-center mb-28'}
-                    initial={{opacity: 0, y: -20}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 0.6}}
-                >
-                    Trabajos
-                </motion.h2>
-                <div className={`flex items-center ${works.length < 2 ? 'lg:justify-center' : ' lg:justify-between' } flex-wrap md:gap-0 gap-8 md:w-[95%] w-[90%] mx-auto`}>
-                    {works.map((data, index) => (
-                        <motion.div
-                            className={'lg:w-[70%]'}
-                            key={index}
-                            initial={{opacity: 0, y: 100}}
-                            whileInView={{opacity: 1, y: 0}}
-                            transition={{delay: index * 0.4, duration: 1}}
-                        >
-                            <WorkCard work={data}/>
-                        </motion.div>
-                    ))}
-                </div>
-            </motion.div>
-        </div>
+                Trabajos
+            </motion.h2>
+
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-12 w-[95%]">
+                {works.map((data, index) => (
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: index * 0.2 }}
+                        className=""
+                    >
+                        <WorkCard work={data} />
+                    </motion.div>
+                ))}
+            </div>
+        </section>
     );
 };

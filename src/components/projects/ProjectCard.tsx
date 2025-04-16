@@ -15,12 +15,15 @@ export const ProjectCard = (props : {project : Project})=>{
                         <a href={project.repository.url} target={'_blank'}><ToolTip image={project.repository.source}
                                                               altImage={project.repository.alt}
                                                               dataTip={project.repository.alt}/></a>
-                        <a href={project.deploy.url} target={'_blank'}><ToolTip image={project.deploy.source}
-                                                          altImage={project.deploy.alt} dataTip={project.deploy.alt}/></a>
+                        {project.deploy.url != "" &&
+                            <a href={project.deploy.url} target={'_blank'}><ToolTip image={project.deploy.source}
+                                                                                    altImage={project.deploy.alt}
+                                                                                    dataTip={project.deploy.alt}/></a>
+                        }
                     </div>
                     <div className={'lg:hidden flex items-center md:gap-6 gap-4'}>
                         <a href={project.repository.url} target={'_blank'}>
-                            <img src={project.repository.source} alt={project.repository.alt} className={'w-8 h-8 cursor-pointer bg-[#310000]'}/>
+                        <img src={project.repository.source} alt={project.repository.alt} className={'w-8 h-8 cursor-pointer bg-[#310000]'}/>
                         </a>
                         <a href={project.deploy.url} target={'_blank'}>
                             <img src={project.deploy.source} alt={project.deploy.alt} className={'w-8 h-8 cursor-pointer bg-[#310000]'}/>

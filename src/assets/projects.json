@@ -32,6 +32,9 @@
       {
         "source": "/technologies/tailwind.svg",
         "alt": "Tailwind CSS"
+      },{
+        "source": "/technologies/railway.svg",
+        "alt": "Railway"
       }
     ],
     "repository": {
@@ -40,8 +43,8 @@
       "url": "https://github.com/orgs/KirbyPregunta/repositories"
     },
     "deploy": {
-      "source": "/technologies/railway.svg",
-      "alt": "Railway para el deploy",
+      "source": "/technologies/internet.svg",
+      "alt": "Visitar",
       "url": ""
     },
     "sections": [
@@ -106,6 +109,9 @@
       {
         "source": "/technologies/css.svg",
         "alt": "CSS3"
+      },{
+        "source": "/technologies/koyeb.svg",
+        "alt": "Koyeb"
       }
     ],
     "repository": {
@@ -114,8 +120,8 @@
       "url": "https://github.com/orgs/TuristeAR/repositories"
     },
     "deploy": {
-      "source": "/technologies/koyeb.svg",
-      "alt": "Koyeb para el deploy",
+      "source": "/technologies/internet.svg",
+      "alt": "Visitar",
       "url": ""
     },
     "sections": [
@@ -172,6 +178,57 @@
     }
   },
   {
+    "title": "La Vera Pizza",
+    "images": [
+      {
+        "source": "/projects/laVeraPizza/hero.png",
+        "alt": "Hero"
+      },
+      {
+        "source": "/projects/laVeraPizza/sucursales.png",
+        "alt": "Sucursales"
+      },
+      {
+        "source": "/projects/laVeraPizza/sobreNosotros.png",
+        "alt": "Sobre nosotros"
+      },
+      {
+        "source": "/projects/laVeraPizza/contacto.png",
+        "alt": "Contacto"
+      }
+    ],
+    "description": "La Vera Pizza es una landing page para una pizzería. La web presenta información sobre el restaurante, sus sucursales y medios de contacto, con un diseño moderno, responsive y enfocado en la experiencia del usuario.",
+    "technologies": [
+      {
+        "source": "/technologies/react.svg",
+        "alt": "React"
+      },
+      {
+        "source": "/technologies/tailwind.svg",
+        "alt": "Tailwind CSS"
+      },
+      {
+        "source": "/technologies/netlify.svg",
+        "alt": "Netlify"
+      }
+    ],
+    "repository": {
+      "source": "/technologies/github.svg",
+      "alt": "Repositorio",
+      "url": "https://github.com/PaoloAleman/La-Vera-Pizza"
+    },
+    "deploy": {
+      "source": "/technologies/internet.svg",
+      "alt": "Visitar",
+      "url": "https://laverapizza.netlify.app/"
+    },
+    "sections": [],
+    "icon": {
+      "source": "/projects/laVeraPizza/pizza.svg",
+      "alt": "La Vera Pizza"
+    }
+  },
+  {
     "title": "River de Gallardo",
     "images": [
       {
@@ -200,6 +257,10 @@
       {
         "source": "/technologies/tailwind.svg",
         "alt": "Tailwind CSS"
+      },
+      {
+        "source": "/technologies/netlify.svg",
+        "alt": "Netlify"
       }
     ],
     "repository": {
@@ -208,8 +269,8 @@
       "url": "https://github.com/PaoloAleman/Gallardo"
     },
     "deploy": {
-      "source": "/technologies/netlify.svg",
-      "alt": "Netlify para el deploy",
+      "source": "/technologies/internet.svg",
+      "alt": "Visitar",
       "url": "https://riverdegallardo.netlify.app/"
     },
     "sections": [],
