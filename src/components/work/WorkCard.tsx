@@ -15,7 +15,7 @@ export const WorkCard = ({ work }: { work: Project }) => {
 
         const icon = <img src={src} alt={alt} className={className} />;
 
-        return url ? (
+        return url != "" ? (
             <a href={url} target="_blank" rel="noopener noreferrer">
                 {isCompact ? icon : <ToolTip image={src} altImage={alt} dataTip={alt} />}
             </a>
@@ -43,13 +43,14 @@ export const WorkCard = ({ work }: { work: Project }) => {
 
                     <div className="hidden md:flex gap-6">
                         {renderIconLink(work.repository.url, work.repository.source, work.repository.alt, false)}
-                        {renderIconLink(work.deploy.url, work.deploy.source, work.deploy.alt, false)}
+                        {work.deploy.url && renderIconLink(work.deploy.url, work.deploy.source, work.deploy.alt, false)}
                     </div>
 
                     <div className="md:hidden flex gap-6">
                         {renderIconLink(work.repository.url, work.repository.source, work.repository.alt, true)}
-                        {renderIconLink(work.deploy.url, work.deploy.source, work.deploy.alt, true)}
+                        {work.deploy.url && renderIconLink(work.deploy.url, work.deploy.source, work.deploy.alt, true)}
                     </div>
+
                 </div>
 
                 <p className="my-4">{work.description}</p>
